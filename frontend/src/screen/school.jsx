@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import './school.css'
 
-// Dummy data for schools in Rajshahi (This should be fetched from the backend or API)
 const schools = [
   {
     id: 1,
@@ -41,7 +40,7 @@ const schools = [
     description: "An international school with high academic standards.",
     contact: "0123456789",
   },
-  // Add more schools as needed
+
 ];
 
 const SchoolPage = () => {
@@ -99,15 +98,13 @@ const SchoolPage = () => {
       },
       
       
-      // Add more schools as needed
+
     ]
   )
   }, [selectedDivision])
 
-  // Dummy logic to simulate changing divisions (e.g., from dropdown)
   const handleDivisionChange = (event) => {
     setSelectedDivision(event.target.value);
-    // Here you would typically fetch data related to the selected division
   };
 
   return (
