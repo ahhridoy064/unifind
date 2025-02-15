@@ -31,5 +31,18 @@
     "postcss": "^8.5.1",
     "tailwindcss": "^4.0.2",
     "vite": "^6.0.5"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahhridoy064/unifind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahhridoy064/unifind/issues"
+  },
+  "homepage": "https://github.com/ahhridoy064/unifind#readme"
 }

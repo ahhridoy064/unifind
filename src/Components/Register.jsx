@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 import  "../FormStyles.css"
 
 
@@ -7,7 +7,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
+  const navigate = useNavigate();  
   const handleSubmit = (e) => {
     e.preventDefault();
   
@@ -39,7 +39,15 @@ const Register = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
-          <button type="submit" className="submit-btn">Register</button>
+          <button type="submit" className="submit-btn">Register</button><br/>
+
+          <button
+            type="button"
+            onClick={() => navigate("/login")}
+            className="toggle-btn"
+          >
+            Already Have an Account? Log in
+          </button>
         </form>
       
       </div>

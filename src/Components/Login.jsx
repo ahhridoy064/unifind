@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../FormStyles.css";  
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,7 +31,27 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit" className="submit-btn">Login</button>
+          <button type="submit" className="submit-btn">Login</button><br/>
+
+          <button
+            type="button"
+            onClick={() => navigate("/register")}
+            className="toggle-btn"
+          >
+            Don't Have an Account? Register
+          </button>
+          <br/>
+
+          <button
+            type="button"
+            onClick={() => navigate("/forgot-password")}
+            className="toggle-btn"
+          >
+            Forgot Password?
+          </button>
+          <br/>
+                   
+          
         </form>
      
       </div>
