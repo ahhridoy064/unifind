@@ -1,0 +1,188 @@
+/* medical-center.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+#medical-centers {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.active {
+  background-color: #2c3e50;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+select {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.division-container {
+  margin-bottom: 40px;
+}
+
+.division-container h3 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.medical-center-item {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medical-center-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.medical-center-item a {
+  display: block;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.medical-center-item a:hover {
+  color: #3498db;
+}
+
+.medical-center-item a:visited {
+  color: #2c3e50;
+}
+
+.medical-center-item a::after {
+  content: " →";
+  font-weight: bold;
+  color: #3498db;
+  transition: opacity 0.3s ease;
+}
+
+.medical-center-item a:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  button, select {
+    width: 100%;
+  }
+}
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-section input[type="text"] {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  width: 250px;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-section input[type="text"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0px 0px 5px rgba(0, 91, 187, 0.5);
+}
+
+.filter-section select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.active {
+  background-color: #004494;
+}
+

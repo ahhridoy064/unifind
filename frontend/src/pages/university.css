@@ -1,0 +1,191 @@
+/* General Style */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Section Styles for University */
+#universities {
+  padding: 40px 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Heading Styles */
+h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 40px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Filter Section Styles for University */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-section button,
+.filter-section select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-section button:hover,
+.filter-section select:hover {
+  background-color: #1a73e8;
+  color: #fff;
+  border-color: #1a73e8;
+}
+
+.filter-section button.active {
+  background-color: #1a73e8;
+  color: #fff;
+  border-color: #1a73e8;
+}
+
+.filter-section select {
+  flex: 1;
+  max-width: 200px;
+}
+
+/* Division Container */
+.division-container {
+  margin-bottom: 30px;
+}
+
+/* University List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.university-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-item:hover {
+  background-color: #1a73e8;
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.university-item a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.university-item a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-section button,
+  .filter-section select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .university-item {
+    font-size: 16px;
+  }
+}
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-section input[type="text"] {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  width: 250px;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-section input[type="text"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0px 0px 5px rgba(0, 91, 187, 0.5);
+}
+
+.filter-section select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.active {
+  background-color: #004494;
+}

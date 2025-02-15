@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #f4faff;
-    color: #333;
+    color: #120d0d;
     overflow-x: hidden;
 }
 
@@ -24,7 +24,6 @@ header {
     background: linear-gradient(90deg, #6c63ff, #3ecbf5);
     color: white;
     padding: 20px 0;
-    position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

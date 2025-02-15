@@ -1,16 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const sectorsData = [
-  { title: "Schools", description: "Find schools across all divisions.", link: "schools.html" },
-  { title: "Colleges", description: "Discover colleges near you.", link: "colleges.html" },
-  { title: "Universities", description: "Explore top universities for higher education.", link: "universities.html" },
-  { title: "Medical Centers", description: "Search for trusted healthcare institutions.", link: "medical_centers.html" }
+  { title: "Schools", description: "Find schools across all divisions.", link: "/school" },
+  { title: "Colleges", description: "Discover colleges near you.", link: "/college" },
+  { title: "Universities", description: "Explore top universities for higher education.", link: "/university" },
+  { title: "Medical Centers", description: "Search for trusted healthcare institutions.", link: "/medicalcenter" }
 ];
 
 const Sectors = () => {
   return (
     <>
-      
       <section id="sectors" className="sectors">
         <div className="container">
           <h3>Explore Sectors</h3>
@@ -19,13 +19,12 @@ const Sectors = () => {
               <div className="card" key={index}>
                 <h4>{sector.title}</h4>
                 <p>{sector.description}</p>
-                <a href={sector.link} className="btn">Explore</a>
+                <Link to={sector.link} className="btn">Explore</Link>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       
       <section id="about" className="about-us">
         <div className="container">
