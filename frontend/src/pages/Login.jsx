@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../pages/FormStyles.css";  
+import "../pages/Login.css";  // Import the scoped CSS file
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    // Handle login logic here
   };
 
   return (
-    <body>
-      <div className="form-container">
-        <div className="form-card">
+    <div className="login-body">
+      <div className="login-container">
+        <div className="login-card">
           <h2>Login</h2>
           <form onSubmit={handleSubmit}>
             <input
@@ -32,7 +32,8 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <button type="submit" className="submit-btn">Login</button><br/>
+            <button type="submit" className="submit-btn">Login</button>
+            <br />
 
             <button
               type="button"
@@ -41,7 +42,7 @@ const Login = () => {
             >
               Don't Have an Account? Register
             </button>
-            <br/>
+            <br />
 
             <button
               type="button"
@@ -50,11 +51,11 @@ const Login = () => {
             >
               Forgot Password?
             </button>
-            <br/>
+            <br />
           </form>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 

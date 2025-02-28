@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Sectors from '../components/Sectors';
+import Frontpage from '../components/frontpage';
 import Schools from '../pages/school';
 import SchoolProfile from '../pages/schoolProfile'; // Added SchoolProfile
 import Colleges from '../pages/college';
@@ -9,9 +9,6 @@ import Universities from '../pages/university';
 import UniversityProfile from '../pages/universityProfile'; // Added UniversityProfile
 import MedicalCenters from '../pages/medicalcenter';
 import MedicalCenterProfile from '../pages/medicalcenterProfile'; // Added MedicalCenterProfile
-import Header from '../components/header';
-import Footer from '../components/footer';
-import HeroSection from '../components/Herosection';
 import '../pages/Home.css';
  import Login from '../pages/Login';
  import Register from '../pages/Register';
@@ -24,10 +21,9 @@ import '../pages/Home.css';
 const Home = () => {
   return (
     <>
-      <Header />
-      <HeroSection />
+    
       <Routes>
-        <Route path="/" element={<Sectors />} />
+        <Route path="/" element={<Frontpage />} />
 
         {/* School Routes */}
         <Route path="/school" element={<Schools />} />
@@ -51,7 +47,7 @@ const Home = () => {
 
       </Routes>
 
-      <Footer />
+      
     </>
   );
 };
