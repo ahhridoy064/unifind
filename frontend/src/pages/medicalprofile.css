@@ -1,0 +1,168 @@
+/* medical Profile Container */
+.medical-profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* medical Name */
+  .medical-profile h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* medical Logo */
+  .medical-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* medical Details */
+  .medical-profile p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .medical-profile p b {
+    color: #333;
+  }
+  
+  /* Google Maps Link */
+  .medical-profile a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .medical-profile a:hover {
+    color: #1557b0;
+    text-decoration: underline;
+  }
+  
+  /* Contact List */
+  .medical-profile ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .medical-profile ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .medical-profile ul li b {
+    color: #333;
+  }
+  
+  /* Reviews Section */
+  .medical-profile h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .medical-profile ul.reviews-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .medical-profile ul.reviews-list li {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .medical-profile ul.reviews-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .medical-profile ul.reviews-list li b {
+    color: #333;
+  }
+  
+  /* Review Form */
+  .medical-profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .medical-profile form input,
+  .medical-profile form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s ease;
+  }
+  
+  .medical-profile form input:focus,
+  .medical-profile form textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  .medical-profile form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .medical-profile form button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .medical-profile form button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .medical-profile {
+      padding: 15px;
+    }
+  
+    .medical-profile h2 {
+      font-size: 2rem;
+    }
+  
+    .medical-profile h3 {
+      font-size: 1.5rem;
+    }
+  
+    .medical-profile form input,
+    .medical-profile form textarea {
+      font-size: 0.9rem;
+    }
+  
+    .medical-profile form button {
+      font-size: 0.9rem;
+    }
+  }

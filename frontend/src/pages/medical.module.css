@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Soft gradient background */
+  margin: 0;
+  padding: 0;
+}
+
+/* medicals Container */
+.medicalsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+}
+
+.medicalsContainer h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark text */
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Filter Section */
+.medicalsFilterSection {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.medicalsFilterSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark text */
+}
+
+.medicalsDivisionList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.medicalsDivisionItem {
+  list-style: none;
+}
+
+.medicalsDivisionBtn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicalsDivisionBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter Options */
+.medicalsFilterOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.medicalsFilterDropdown,
+.medicalsSearchInput {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Transparent border */
+  border-radius: 25px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  color: #333; /* Dark text */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicalsFilterDropdown:focus,
+.medicalsSearchInput:focus {
+  border-color: #6a11cb; /* Purple border on focus */
+  outline: none;
+  box-shadow: 0 4px 10px rgba(106, 17, 203, 0.1); /* Soft shadow */
+}
+
+.medicalsBackBtn {
+  background: #ff6f61; /* Red button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicalsBackBtn:hover {
+  background: #ff3b2f; /* Darker red on hover */
+  box-shadow: 0 4px 10px rgba(255, 59, 47, 0.2); /* Soft shadow */
+}
+
+/* medical List */
+.medicalsList {
+  list-style: none;
+  padding: 0;
+}
+
+.medicalsItem {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicalsItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.medicalsItem a {
+  text-decoration: none;
+  color: #333; /* Dark text */
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.medicalsItem a:hover {
+  color: #6a11cb; /* Purple on hover */
+}
+
+/* Loading and Error Messages */
+.medicalsLoading,
+.medicalsError {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .medicalsContainer {
+    padding: 15px;
+  }
+
+  .medicalsContainer h2 {
+    font-size: 2rem;
+  }
+
+  .medicalsFilterSection h3 {
+    font-size: 1.2rem;
+  }
+
+  .medicalsFilterDropdown,
+  .medicalsSearchInput {
+    font-size: 0.9rem;
+  }
+
+  .medicalsBackBtn {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4faff;
+    color: #120d0d;
+    overflow-x: hidden;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+header {
+    background: linear-gradient(90deg, #6c63ff, #3ecbf5);
+    color: white;
+    padding: 20px 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+header .logo p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a.btn {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(255, 117, 140, 0.5);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+header nav ul li a.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #6c63ff, #ff6b6b);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content {
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero a {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 117, 140, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 117, 140, 0.8);
+}
+
+
+.sectors {
+    padding: 60px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.sectors h3 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #3ecbf5, #6c63ff);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(255, 117, 140, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 117, 140, 0.8);
+}
+
+
+footer {
+    background: linear-gradient(90deg, #6c63ff, #3ecbf5);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

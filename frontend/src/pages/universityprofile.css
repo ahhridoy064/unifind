@@ -1,0 +1,168 @@
+/* university Profile Container */
+.university-profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* university Name */
+  .university-profile h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* university Logo */
+  .university-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* university Details */
+  .university-profile p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .university-profile p b {
+    color: #333;
+  }
+  
+  /* Google Maps Link */
+  .university-profile a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .university-profile a:hover {
+    color: #1557b0;
+    text-decoration: underline;
+  }
+  
+  /* Contact List */
+  .university-profile ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .university-profile ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .university-profile ul li b {
+    color: #333;
+  }
+  
+  /* Reviews Section */
+  .university-profile h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .university-profile ul.reviews-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .university-profile ul.reviews-list li {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .university-profile ul.reviews-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .university-profile ul.reviews-list li b {
+    color: #333;
+  }
+  
+  /* Review Form */
+  .university-profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .university-profile form input,
+  .university-profile form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s ease;
+  }
+  
+  .university-profile form input:focus,
+  .university-profile form textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  .university-profile form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .university-profile form button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .university-profile form button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .university-profile {
+      padding: 15px;
+    }
+  
+    .university-profile h2 {
+      font-size: 2rem;
+    }
+  
+    .university-profile h3 {
+      font-size: 1.5rem;
+    }
+  
+    .university-profile form input,
+    .university-profile form textarea {
+      font-size: 0.9rem;
+    }
+  
+    .university-profile form button {
+      font-size: 0.9rem;
+    }
+  }
