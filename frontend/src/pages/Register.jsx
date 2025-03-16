@@ -1,16 +1,53 @@
+
+
+
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../pages/Register.css";  // Import the scoped CSS file
+import axios from "axios";
+import "../pages/Register.css";  
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle registration logic here
+
+    if (password !== confirmPassword) {
+      setError("Passwords do not match!");
+      return;
+    }
+
+    try {
+      const response = await axios.post("http://localhost:5000/api/auth/register", {
+        email,
+        password,
+      });
+
+      if (response.data.success) {
+        alert("Registration successful! Redirecting to Login...");
+        navigate("/login"); 
+      } else {
+        setError("Registration failed. Try again.");
+      }
+    } catch (err) {
+      console.error("Registration error:", err);
+      if (err.response) {
+      
+    
+        setError(`Server error: ${err.response.data.message || err.response.statusText}`);
+      } else if (err.request) {
+        
+        setError("No response from server");
+      } else {
+    
+        setError("Error setting up registration request. Please try again.");
+      }
+    }
   };
 
   return (
@@ -51,6 +88,7 @@ const Register = () => {
               Already Have an Account? Log in
             </button>
           </form>
+          {error && <p className="error">{error}</p>}
         </div>
       </div>
     </div>

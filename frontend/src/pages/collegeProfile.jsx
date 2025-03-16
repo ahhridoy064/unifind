@@ -3,16 +3,15 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./college.css";
 
-const API_BASE_URL = "http://localhost:5000"; // Backend URL
+const API_BASE_URL = "http://localhost:5000"; 
 
 const CollegeProfile = () => {
-  const { id } = useParams(); // Get college ID from URL
+  const { id } = useParams(); 
   const [college, setCollege] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [review, setReview] = useState({ user: "", rating: 0, comment: "" });
 
-  // Fetch college details from the backend
   useEffect(() => {
     const fetchCollege = async () => {
       try {
@@ -28,12 +27,12 @@ const CollegeProfile = () => {
     fetchCollege();
   }, [id]);
 
-  // Handle Review Submission
+
   const handleSubmitReview = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(`${API_BASE_URL}/colleges/${id}/reviews`, review);
-      setCollege(response.data); // Update with new review
+      setCollege(response.data); 
       setReview({ user: "", rating: 0, comment: "" });
     } catch (err) {
       console.error("Error submitting review:", err);

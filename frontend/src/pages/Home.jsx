@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Frontpage from '../components/frontpage';
 import Schools from '../pages/school';
-import SchoolProfile from '../pages/schoolProfile'; // Added SchoolProfile
+import SchoolProfile from '../pages/schoolProfile'; 
 import Colleges from '../pages/college';
 import CollegeProfile from '../pages/collegeProfile'; // Added CollegeProfile
 import Universities from '../pages/university';
@@ -45,6 +45,7 @@ const Home = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
 
+        
       </Routes>
 
       

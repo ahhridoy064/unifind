@@ -1,7 +1,7 @@
 /* Login-specific styles */
 .login-body {
   font-family: "Poppins", sans-serif;
-  background: url('/LogInPageBackground9.jpg') no-repeat center center fixed;
+  background: url('../pages/LogInPageBackground9.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
